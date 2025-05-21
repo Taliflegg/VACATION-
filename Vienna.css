@@ -1,0 +1,387 @@
+ 
+ *{
+    
+    box-sizing: border-box;
+ }
+ header {
+    height:15vh;  
+    background-color: white;
+  }
+  #myLinks {
+    display: none;
+  }
+  #myCheckbox{
+    position: absolute;
+    right: -3rem;
+  }
+  #myCheckbox:checked ~ #myLinks {
+    display:none;
+  }
+  
+  #myLinks {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+  }
+    nav a{
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem;
+       width:25%;
+       display: inline-block;
+        color:black;
+        font-size:30px;
+        Box-shadow: 2px 2px 4px black;
+       
+       }
+       .places1{
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem;
+       width:25%;
+       display: inline-block;
+        color:black;
+        font-size:30px;
+        Box-shadow: 2px 2px 4px black;
+         
+       
+       }
+a {
+    text-decoration: none;
+   } 
+     
+  
+  nav {
+    display: flex;
+    gap: 20px;
+    width:90%;
+    justify-content: center;
+    justify-content:space-around;
+    direction: rtl;
+    opacity: 80%;
+    /* margin-top:4rem; */
+  }
+  .logo img{
+    position: absolute;
+    height:7rem;  
+    width:13rem;
+     top: 0rem;
+     right:-2rem;
+       
+   
+   
+   }
+   .phone p{
+position: absolute;  
+left: 4rem;
+font-size:25px;
+margin:2rem;
+ }
+ .phone img{
+    width: 100%;
+    height: 100%;
+ }
+ .link{
+   color:black;
+    text-shadow:lightblue;
+ }
+
+    
+
+   
+   
+   nav a:hover{
+    transform: scale(1.2);
+  }
+  .hidden-menu {
+    display: none; 
+  }
+  
+   
+  .link:hover .hidden-menu {
+    display: block;  
+  }
+
+    img{
+    height:100%;
+    width:77%;
+    border-radius:9%;
+     
+}
+.container {
+    display: flex;
+    
+    justify-content: center;
+     
+      
+        
+         
+}
+.text {
+    width: 39%;
+    height:21rem;
+    text-align:right;
+    border-radius: 5%;
+    background-color:  rgb(219, 237, 243);
+    border: 1px solid   rgb(219, 237, 243);
+    
+}
+
+.image {
+    width: 50%;
+    text-align:left;
+    border-radius: 50%;
+}
+.img{
+    width: 50%;
+    text-align:right;
+    border-radius: 50%;  
+}
+ h1{
+    text-align: right;
+    font-size:40px;
+    background-color:  rgb(219, 237, 243);
+}
+  p{
+    font-size: 25px;
+    direction: rtl;
+    
+     
+}
+.triangle {
+     
+    width: 0;
+    height: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 68px solid  rgb(219, 237, 243);
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    top:57%;
+    right:50%;
+      
+  }
+  .triangle1 {
+     
+    width: 0;
+    height: 0;
+    border-left: 34px solid transparent;
+    border-right: 34px solid transparent;
+    border-bottom: 68px solid   rgb(219, 237, 243);
+    transform: rotate(-90deg);
+    display: flex;
+    position: absolute;
+    top:185%;
+    right:50%;
+  }
+  .hr{
+    height:1rem;
+    color: black;
+    background-color: black;
+  }
+  footer{
+    height:8rem;
+    background-color: white;
+   }
+    .logo1 img{
+    position: absolute;
+    height:10rem;  
+    width:17rem;
+     
+     right:1rem;
+   
+    }
+      form {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left:36%;
+        width: 300px;
+        align-items: flex-end;
+         gap:10px;
+      }
+      form p {
+        font-size:20px;
+      }
+      .media{
+        position: absolute;
+        left:-3rem;
+         
+      }
+      .media p{
+        
+        left:-3rem;
+        font-size:30px;
+      }
+       
+      @media  screen and (max-width: 600px) {
+        
+        header {
+            width: 21rem;
+            height:15vh;  
+            background-color: white;
+          }
+          a{
+            color: black;
+          }
+            #myCheckbox{  
+          
+        position: absolute;
+        right: 50%;
+       top: 1.5rem;
+ }
+         
+         #myLinks {
+           display: none;
+         }
+          
+         #myCheckbox:checked ~ #myLinks {
+           display: block;
+         }
+         
+         #myLinks {
+           display: none;
+           position: absolute;
+           top:3rem;
+           right:20%;
+           background-color: white;
+           border: 1px solid black;
+           padding: 10px;
+         }
+         nav a {
+            text-align: center;
+            padding: 0rem;
+            margin: 0%;
+            width: 25%;
+            display: inline-block;
+            color: white;
+            font-size: 0px;
+            Box-shadow: none;
+        }
+ .places1{
+   text-align: center;
+   padding: 1rem;
+   margin: 0.5rem;
+  width:25%;
+  display: inline-block;
+   color:white;
+   font-size:30px;
+   Box-shadow: none;
+  
+  }
+         .card-container{
+           display: flex;
+           flex-direction: column;
+           justify-content: space-evenly;
+            flex-wrap: wrap;
+           gap:20px;
+            
+           }
+           .card{
+             width:99%;
+             background-color: lightgray
+           }
+           .watsapp{
+             
+            right: -13rem;
+           bottom: 0rem;
+           position: fixed;
+           height: 5%;
+            width: 10%;
+            }
+           form{
+         display: flex;
+          flex-direction: column;
+         position: absolute;
+            left: 25%;
+            width: 300px;
+           align-items: flex-end;
+     padding: 20px;
+     gap: 10px;
+ }
+  
+          .logo img{
+            position: absolute;
+            height:0rem;  
+            width:0rem;
+             top: 0rem;
+             right:-2rem;
+               
+        }
+        .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+img{
+height: 100%;
+width: 203%;
+border-radius: 9%;
+    }
+
+    .text {
+        width: 101%;
+        height: 21rem;
+        text-align: right;
+        border-radius: 5%;
+        background-color: rgb(219, 237, 243);
+        border: 1px solid rgb(219, 237, 243);
+    }
+    .watsapp{
+            
+        right: -13rem;
+       bottom: 0rem;
+       position: fixed;
+       height: 5%;
+        width: 10%;
+        }
+       form{
+     display: flex;
+      flex-direction: column;
+     position: absolute;
+        left: 25%;
+        width: 300px;
+       align-items: flex-end;
+ padding: 20px;
+ gap: 10px;
+}
+ .media p {
+    position: absolute;
+    margin: 3rem;
+    left: 6rem;
+    top: 2rem;
+    font-size: 30px;
+}
+   .logo1 img{
+     position: absolute;
+     height:0rem;  
+     width:0rem;
+   }
+            }
+@media  screen and (min-width: 601px) and (max-width: 1024px) {
+    header{
+     height: 7vh;
+    background-color: white;
+  
+    }
+    .text {
+        width: 55%;
+        height: 21rem;
+        text-align: right;
+        border-radius: 5%;
+        background-color: rgb(219, 237, 243);
+        border: 1px solid rgb(219, 237, 243);
+    }
+    p {
+        font-size: 30px;
+        direction: rtl;
+    }
+    .image {
+        width: 63%;
+    }
+    
+     
+    }

@@ -1,0 +1,312 @@
+ 
+ *{
+    box-sizing: border-box;
+ }
+
+header {
+   height:15vh;  
+   background-color: white;
+ }
+ #myLinks {
+    display: none;
+  }
+  #myCheckbox{
+    position: absolute;
+    right: -3rem;
+  }
+  #myCheckbox:checked ~ #myLinks {
+    display:none;
+  }
+  
+  #myLinks {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+  }
+   
+a {
+   text-decoration: none;
+  } 
+    
+ 
+ nav {
+   display: flex;
+   gap: 20px;
+   width:90%;
+   justify-content: center;
+   justify-content:space-around;
+   direction: rtl;
+   opacity: 80%;
+   /* margin-top:4rem; */
+ }
+ .logo img{
+   position: absolute;
+   height:7rem;  
+   width:13rem;
+    top: 0rem;
+    right:-2rem;
+      
+  
+  
+  }
+  
+.link{
+  color:black;
+   text-shadow:lightblue;
+}
+
+   
+
+  nav a{
+   text-align: center;
+   padding: 1rem;
+   margin: 0.5rem;
+  width:25%;
+  display: inline-block;
+   color:black;
+   font-size:30px;
+   Box-shadow: 2px 2px 4px black;
+  
+  }
+   
+  
+  nav a:hover{
+   transform: scale(1.2);
+ }
+ .hidden-menu {
+   display: none; 
+ }
+ 
+  
+ .link:hover .hidden-menu {
+   display: block;  
+ }
+
+   
+
+ 
+     
+       
+        
+
+ h1{
+    position: absolute;
+    right: 3rem;
+    font-size: 30px;
+
+ }
+ p{
+    position: absolute;
+    right: 2rem;
+    top: 9rem;
+    width: 34%;
+    height:21rem;
+    text-align:right;
+    font-size: 30px;
+    direction: rtl;
+    
+ }
+ .photos img{
+    display: flex;
+    justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+img{
+    height: 100%;
+    width: 58%;
+}
+ 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    
+  } 
+  
+  
+  .photos1{
+   position: absolute;
+   left:28.5rem;
+}
+.photos{
+    display: flex;
+    flex-direction: column;
+     gap: 3px;
+}
+.photos1 img{
+    height: 110%;
+    width: 12.9vw;
+}
+
+
+  
+form {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 6rem;
+        bottom: -38rem;
+        width: 300px;
+        align-items: self-start;
+        padding: 20px;
+        gap: 10px;
+    }
+ 
+    @media  screen and (max-width: 600px) {
+        header{
+            height: 10vh;
+        }
+        p{
+  
+            position:absolute;
+            right: 0rem;
+            top:44rem;
+            width:23rem;
+            height:15rem;
+            font-size:30px;
+            
+        }
+        #myCheckbox{
+            position: absolute;
+           right: 50%;
+          top: 1.5rem;
+    }
+            
+            #myLinks {
+              display: none;
+            }
+             
+             
+            #myCheckbox:checked ~ #myLinks {
+              display: block;
+              z-index: 1;
+            }
+            
+            #myLinks {
+              display: none;
+              position: absolute;
+              top:3rem;
+              right:20%;
+              background-color: white;
+              border: 1px solid black;
+              padding: 10px;
+            }
+            nav a {
+                text-align: center;
+                padding: 0rem;
+                margin: 0%;
+                width: 25%;
+                display: inline-block;
+                color: white;
+                font-size: 0px;
+                Box-shadow: none;
+            }
+               .places1{
+                text-align: center;
+                padding: 1rem;
+                margin: 0.5rem;
+               width:25%;
+               display: inline-block;
+                color:white;
+                font-size:30px;
+                Box-shadow:none;
+                 
+               
+        
+               }
+               a{
+                color: black;
+               }
+               nav {
+                display: flex;
+                gap: 20px;
+                width:70%;
+                justify-content: center;
+                justify-content:space-around;
+                direction: rtl;
+                opacity: 80%;
+              
+              }
+     .photos1{
+    position: absolute;
+    left: 13.7rem;
+     }   
+     .photos1 img {
+        height: 121%;
+        width: 21.8vw;
+    }
+    h1 {
+        position: absolute;
+        top: 42rem;
+        right: 0rem;
+        font-size: 26px;
+    }
+    .logo img{
+        position: absolute;
+        height:0rem;  
+        width:0rem;
+         top: 0rem;
+         right:-2rem;
+           
+        }
+        img {
+            height: 98%;
+            width: 58%;
+        }
+        p {
+            position: absolute;
+            right: 0rem;
+            top:44rem;
+            width:none;
+            height: 21rem;
+           
+            font-size: 30px;
+            direction: rtl;
+             }
+             form{
+                
+               display: flex;
+               flex-direction: column;
+               position: absolute;
+                right: 6rem;
+                bottom: -38rem;
+               width: 300px;
+               align-items: self-start;
+               padding: 20px;
+               gap: 10px;
+               top: 116rem;
+            }
+             
+             }
+             @media only screen and (min-width: 601px) and (max-width: 1024px) {
+                h1 {
+                    position: absolute;
+                    right: 3rem;
+                    top: 6rem;
+                    font-size: 30px;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 6rem;
+                    bottom: -10rem;
+                    width: 300px;
+                    align-items: self-start;
+                    padding: 20px;
+                    gap: 10px;
+                }
+                .photos1 img {
+                    height: 110%;
+                    width: 17.1vw;
+                }
+                
+    
+            }
+                    
+
+   
+    
+
+         
